@@ -50,3 +50,8 @@ thread.start()
 - Python was garbage collecting the local variable `worker` but Qt still needed it. Adding it to the `widget.thread_pool.append(thread)` allowed the variable to persist.
 - The reason it worked in debug was because debug kept the local variables longer allowing the program to run.
 - Created new release with this bug fix. `v0.1.1-alpha`
+
+### Saturday Nov 15, 2025
+- Added some extra fuctionality to the `scan_headings` function.
+- Changed output of the `scan_images` function to include found image URLs.
+- Added comments to the `Website_Scanner.py` module to explain what is happening during the functions.
