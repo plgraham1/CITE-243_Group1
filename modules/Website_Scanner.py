@@ -232,11 +232,11 @@ def create_module(parent=None):
         worker.finished.connect(lambda msg: results.append(f"\n{'='*50}\nFINAL RESULTS:\n{'='*50}\n{msg}"))
         worker.error.connect(lambda msg: results.append(f"\nERROR: {msg}"))
 
-        worker.finished.connect(thread.quit)
-        worker.error.connect(thread.quit)
+        # worker.finished.connect(thread.quit)
+        # worker.error.connect(thread.quit)
 
-        thread.finished.connect(worker.deleteLater)
-        thread.finished.connect(thread.deleteLater)
+        # thread.finished.connect(worker.deleteLater)
+        # thread.finished.connect(thread.deleteLater)
 
         thread.started.connect(worker.run)
 
