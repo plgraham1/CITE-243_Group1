@@ -156,7 +156,7 @@ def scan_headings(url, progress_callback=None):
     return "\n".join(out)
 
 ### Function that combines all previous functions into one ###
-def scan_full(url):
+def scan_full(url, progress_callback=None):
     parts = []
     # Send initial progress message for full scan
     if progress_callback:
