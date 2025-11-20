@@ -5,7 +5,7 @@ import socket
 import ssl
 import requests
 from urllib.parse import urlparse
-#from thread_worker import Worker
+from thread_worker import Worker
 
 def get_metadata():
     return {
@@ -109,16 +109,16 @@ def port_probe(target, progress_callback=None):
 
     return "\n".join(out)
 
-def full_scan(target):
+def full_scan(target, progress_callback=None):
     return "\n".join([
         "=== Fingerprint ===",
-        fingerprint_server(target),
+        fingerprint_server(target, progress_callback=None),
         "",
         "=== SSL ===",
-        ssl_check(target),
+        ssl_check(target, progress_callback=None),
         "",
         "=== Ports ===",
-        port_probe(target)
+        port_probe(target, progress_callback=None)
     ])
 
 def create_module(parent=None):
