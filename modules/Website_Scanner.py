@@ -101,7 +101,7 @@ def scan_images(url, progress_callback=None):
     if not output: # if no missing images return this
         return "No missing images.\nFound image URL's:\n" + "\n".join(seen)
     # If there were missing images return this instead
-    return "Missing the following images:\n" + "\n".join(output) + "Found image URL's:\n" + "\n".join(seen)
+    return "Missing the following images:\n" + "\n".join(output) + "\nFound image URL's:\n" + "\n".join(seen)
 
 ### Function to find H1-3 HTML headings and the text for those headings ###
 def scan_headings(url, progress_callback=None):
