@@ -111,7 +111,7 @@ Just run the exe, easy as that.
 # Role breakdown and contributions
 ## Team members
 ### Philip - Project Manager
-
+Provided the UI and Module Framework, aling with example coding for the individual moduals.
 ### Noah - Tester
 Did the general testing. Found some bugs and opened issues on those bugs, as well as coming up with some new features that would be nice. Some quality of life changes as well were implemented because of some findings. I updated this README.md to add the program description, how to use, and instructions to run the program. Biggest contribution was the bug testing and weird edge case that were found. Those can be found in the [Noah_Docs.md](https://github.com/RikuDawn14/CITE_243_Group1/blob/main/Docs/Noah_Docs.md).  I also got the exe all built and ready to go. The .spec file is used to tell pyinstaller how to pull the modules and where they are in the code. I also had to change a module used in the main file to dynamically build the paths for the modules (more in my Docs). 
 
